@@ -158,15 +158,14 @@ button:focus {
         margin-top: 20%;
     }
     .rightpic {
-        float:none;
         opacity: 1;
         margin:auto;
         width:100%;
-        margin-bottom:80px;
+        margin-bottom:20px;
     }
     #resultTable {
-        width: 50%;
-        transform:scale(2);
+        font-size:20px;
+        width: 100%;
         margin:auto;
     }
     #check {

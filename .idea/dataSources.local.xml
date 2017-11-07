@@ -11,5 +11,35 @@
       <user-name>system</user-name>
       <introspection-schemas>*:SYSTEM</introspection-schemas>
     </data-source>
+    <data-source name="@192.168.10.99" uuid="c3851826-3609-45ce-a2a7-759a56597c77">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>s225110</user-name>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>helios.se.ifmo.ru</proxy-host>
+        <proxy-port>2222</proxy-port>
+        <secret-storage>master_key</secret-storage>
+        <user>s225110</user>
+        <use-password>true</use-password>
+      </ssh-properties>
+    </data-source>
+    <data-source name="ucheb@192.168.10.99" uuid="eb86c70f-14ea-49e3-88b5-c4fb6735f2c8">
+      <database-info product="PostgreSQL" version="9.6.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>s225110</user-name>
+      <introspection-schemas>ucheb:public</introspection-schemas>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>helios.se.ifmo.ru</proxy-host>
+        <proxy-port>2222</proxy-port>
+        <user>s225110</user>
+        <use-password>true</use-password>
+      </ssh-properties>
+    </data-source>
   </component>
 </project>

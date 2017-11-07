@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Lab4PIP:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lab4PIP_war</output-path>
+    <root id="archive" name="Lab4PIP_war.war">
+      <element id="artifact" artifact-name="Lab4PIP:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="javax.annotation" />
+          <element id="library" level="project" name="javax.inject-2.3.0-b01" />
+          <element id="library" level="project" name="javax.faces-api-2.0" />
+          <element id="library" level="project" name="antlr-2.7.7" />
+          <element id="library" level="project" name="ojdbc8" />
+          <element id="library" level="project" name="org.hibernate:hibernate-entitymanager:5.2.12.Final" />
+          <element id="library" level="project" name="com.sun.jersey.jersey-core-1.4.0" />
+          <element id="library" level="project" name="hibernate-entitymanager" />
+          <element id="library" level="project" name="javax-inject" />
+          <element id="library" level="project" name="javax.ws.rs-api-2.0-m02" />
+          <element id="library" level="project" name="JPA 2.1-2.1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

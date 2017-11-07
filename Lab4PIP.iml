@@ -43,5 +43,6 @@
     <orderEntry type="library" name="javax-inject" level="project" />
     <orderEntry type="library" name="javax.inject-2.3.0-b01" level="project" />
     <orderEntry type="library" name="javax.faces-api-2.0" level="project" />
+    <orderEntry type="library" name="antlr-2.7.7" level="project" />
   </component>
 </module>

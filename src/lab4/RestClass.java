@@ -34,7 +34,7 @@ public class RestClass {
     @GET
     public Response checkPerson(@Context HttpServletRequest req) {
         if(req.getSession(true).getAttribute("login")!=null) {
-            return Response.ok("1", MediaType.APPLICATION_JSON).build();
+            return Response.ok("<nobr style='font-weight: bold;'>"+req.getSession().getAttribute("login")+"</nobr>", MediaType.TEXT_HTML).build();
         }
         else
             return Response.ok("0", MediaType.APPLICATION_JSON).build();
@@ -66,8 +66,11 @@ public class RestClass {
     @Path("/newPoint")
     @POST
     public void newPoint(@QueryParam("x") Double x,@QueryParam("y") Double y,@QueryParam("r") Double r,@Context HttpServletRequest req){
-        if(req.getSession(true).getAttribute("login")!=null) {
-            mainBean.addPoint(new Points(x, y, r, ""),(String)req.getSession(true).getAttribute("login"));
+        if(req.getSession(true).getAttribute("login")!=null) {try {
+            mainBean.addPoint(new Points(x, y, r, ""), (String) req.getSession(true).getAttribute("login"));
+        }catch (Exception e){
+            mainBean.addPoint(new Points(x, y, 0, ""), (String) req.getSession(true).getAttribute("login"));
+        }
         }
     }
 }

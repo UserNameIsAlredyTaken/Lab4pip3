@@ -8,5 +8,18 @@
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
       <jdbc-url>jdbc:oracle:thin:@localhost:1521:ORCL</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="@192.168.10.99" uuid="c3851826-3609-45ce-a2a7-759a56597c77">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@192.168.10.99:1521:orbis</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="ucheb@192.168.10.99" uuid="eb86c70f-14ea-49e3-88b5-c4fb6735f2c8">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://192.168.10.99:5432/ucheb</jdbc-url>
+    </data-source>
   </component>
 </project>

@@ -11,7 +11,7 @@ import java.rmi.RemoteException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 @LocalBean
-@Singleton
+@Stateless
 public class MainBean{
     private BDManager bdManager = new BDManager();
     public int check(String login, String password){

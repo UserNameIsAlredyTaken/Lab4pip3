@@ -23,6 +23,7 @@
 
 <body class = "alive" link="yellow" id="main">
             <table class = "form" id="check">
+                <tr> <td>Логин!</td></tr>
                 <tr>
                     <td><label for="field_x">X[-5;5]</label></td>
                     <td><input v-on:keypress="entered('field_x', $event)"  name="x" id="field_x" /></td>
@@ -50,6 +51,8 @@
         <script type="text/javascript">
             new Vue({
                 el: "#example",
+                width:0,
+                height:0,
                 mounted(){
                     this.getTable();
                 },
@@ -155,6 +158,8 @@
                         return;
                     }
                     var example = document.getElementById("example");
+                    console.log($('#example').offset().left);
+                    console.log($('#example').pageXOffset);
                     var x = (-example.width/2 + event.clientX-$('#example').offset().left)/50;
                     var y = (example.height/2 - event.clientY+$('#example').offset().top)/50;
                     var R = document.getElementById('field_r').value;
