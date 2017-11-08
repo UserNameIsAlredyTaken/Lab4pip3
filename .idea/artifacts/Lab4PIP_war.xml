@@ -17,6 +17,9 @@
           <element id="library" level="project" name="javax.ws.rs-api-2.0-m02" />
           <element id="library" level="project" name="JPA 2.1-2.1" />
         </element>
+        <element id="directory" name="classes">
+          <element id="jpa-descriptors" facet="Lab4PIP/jpa/JPA" />
+        </element>
       </element>
     </root>
   </artifact>

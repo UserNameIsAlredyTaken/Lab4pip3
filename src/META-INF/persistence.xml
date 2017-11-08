@@ -3,10 +3,10 @@
     <persistence-unit name="NewPersistenceUnit">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
-            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@localhost:1521:ORCL"/>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@localhost:1521:orbis"/>
             <property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
-            <property name="hibernate.connection.username" value="system"/>
-            <property name="hibernate.connection.password" value="2Jirafafu"/>
+            <property name="hibernate.connection.username" value="s225110"/>
+            <property name="hibernate.connection.password" value="HFz2FkKs"/>
             <property name="hibernate.archive.autodetection" value="class"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>

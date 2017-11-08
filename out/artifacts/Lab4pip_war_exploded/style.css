@@ -160,20 +160,25 @@ button:focus {
     .rightpic {
         opacity: 1;
         margin:auto;
-        width:100%;
         margin-bottom:20px;
+    }
+    button,
+    button:active,
+    button:focus {
+        font-size:20px;
+        outline-style:none;
+        outline-offset: 0;
     }
     #resultTable {
         font-size:20px;
-        width: 100%;
+        width: 108%;
         margin:auto;
     }
     #check {
         display: table;
-        width: 0;
         margin: auto;
-        margin-top:60px;
-        margin-bottom:61px;
-        transform:scale(2.08);
+        width:108%;
+        font-size:30px;
+
     }
 }
