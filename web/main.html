@@ -5,6 +5,8 @@
 <head>
     <title>Лабораторная №4</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="flexboxgrid.css" rel="stylesheet" type="text/css"/>
+    <link href="index.css" rel="stylesheet" type="text/css"/>
     <link rel="icon" href="images/favicon.ico"/>
     <script type="text/javascript" src="vue.js"></script>
     <script type="text/javascript" src="jquery-3.2.1.js"></script>
@@ -12,8 +14,10 @@
     </script>
 </head>
 
-<body class = "alive" link="yellow" id="main">
-            <table class = "form" id="check">
+<body class = "alive grid" link="yellow" id="main">
+            <canvas width='830' height="620" id='example' v-on:click="drawDot" class="rightpic"></canvas>
+            <div class="kek">
+                <table class = "form" id="check">
                 <tr> <td colspan="3" id = 'login' style="font-style: italic"> login: </td></tr>
                 <tr>
                     <td><label for="field_x">X[-5;5]</label></td>
@@ -34,11 +38,11 @@
                         <button class="form" style="color: yellow" @mousedown="out">Выйти из аккаунта</button>
                     </td>
                 </tr>
-            </table>
-            <canvas width='830' height="620" id='example' v-on:click="drawDot" class="rightpic"></canvas>
-            <table style='border-radius: 5px;' border="2" bordercolor="yellow" id="resultTable">
-                <tr><td>X</td> <td>Y</td> <td> R </td> <td>Result</td></tr>
-            </table>
+                </table>
+                <table style='border-radius: 5px;' border="2" bordercolor="yellow" id="resultTable">
+                    <tr><td>X</td> <td>Y</td> <td> R </td> <td>Result</td></tr>
+                </table>
+            </div>
         <script type="text/javascript">
             new Vue({
                 el: "#example",
